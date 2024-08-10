@@ -1,0 +1,250 @@
+/* .registerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #aebfda;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+.imageContainer {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.formContainer {
+  width: 40%;
+  padding: 40px;
+  background-color: rgba(224, 233, 238, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  width: 95%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.registerButton {
+  width: 98%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.registerButton:hover {
+  background-color: #0056b3;
+}
+
+.socialLogin {
+  margin-top: 20px;
+}
+
+.socialIcons img {
+  width: 40px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.socialIcons img:hover {
+  transform: scale(1.1);
+}
+
+.loginRedirect {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.loginRedirect span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.loginRedirect span:hover {
+  text-decoration: underline;
+}
+ */
+
+
+ .registerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%); /* Darken the background for better text visibility */
+  animation: fadeIn 2s ease-in;
+}
+
+.formContainer {
+  position: relative;
+  width: 400px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  z-index: 1;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  animation: slideIn 1s ease-out;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(169, 192, 218, 0.5);
+  outline: none;
+}
+
+.registerButton {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.registerButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.socialLogin {
+  margin-top: 20px;
+}
+
+.socialIcons img {
+  width: 40px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.socialIcons img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.loginRedirect {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.loginRedirect span {
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.loginRedirect span:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

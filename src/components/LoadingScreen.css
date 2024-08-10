@@ -1,0 +1,69 @@
+body {
+  font-family: 'Open Sans';
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  font-family: 'Open Sans';
+}
+
+.loading-title {
+  color: #fff;
+  margin: 0;
+  font-size: 5em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .085em;
+}
+
+.loading-progress {
+  height: 11px;
+  background: #fff;
+  top: -11px;
+  bottom: 0;
+  width: 0;
+  position: absolute;
+  transition: width 0.75s;
+  animation: loadingAnimation 2s infinite;
+}
+
+@keyframes loadingAnimation {
+  0% { width: 0; }
+  50% { width: 100%; }
+  100% { width: 0; }
+}
+
+@media (max-width: 900px) {
+  .profile-img {
+      float: none;
+      margin: 0 auto;
+      width: 600px;
+  }
+  .about-me {
+      max-width: 600px;
+      margin: 0 auto;
+  }
+}
+
+@media (max-width: 780px) {
+  html {
+      font-size: .85em;
+  }
+  .main-nav li {
+      margin: 0 5px;
+  }
+  .page {
+      margin-top: 20px;
+  }
+  .profile-img {
+      margin-top: 25px;
+  }
+}
