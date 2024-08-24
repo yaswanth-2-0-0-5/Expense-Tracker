@@ -1,0 +1,18 @@
+.adminContactPage {
+    padding: 20px;
+  }
+  
+  .messageTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .messageTable th, .messageTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .messageTable th {
+    background-color: #f4f4f4;
+  }
+  

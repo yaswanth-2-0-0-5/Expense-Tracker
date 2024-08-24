@@ -1,0 +1,131 @@
+.footer {
+    background: linear-gradient(135deg, #19191a, #0c0c0c);
+    color: #fff;
+    padding: 60px 20px;
+    border-top: 1px solid #1a242f;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footerSection {
+    flex: 1;
+    min-width: 220px;
+  }
+  
+  .footerSection h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ecf0f1;
+    position: relative;
+  }
+  
+  .footerSection h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 40px;
+    height: 3px;
+    background: #e74c3c;
+    border-radius: 2px;
+  }
+  
+  .footerSection p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .quickLinks {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .quickLinks li {
+    margin-bottom: 10px;
+  }
+  
+  .quickLinks a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .quickLinks a:hover {
+    color: #e74c3c;
+  }
+  
+  .newsletterForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .newsletterForm input {
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .loginButton {
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: #e74c3c;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .loginButton {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    animation: shake 0.5s;
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    20%, 60% {
+      transform: translateX(-5px);
+    }
+    40%, 80% {
+      transform: translateX(5px);
+    }
+  }
+  
+  .socialMedia {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .socialIcon {
+    display: inline-block;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    transition: transform 0.3s;
+  }
+  
+  .socialIcon:hover {
+    color: #e74c3c;
+    transform: translateY(-5px);
+  }
+  
+  .footerBottom {
+    text-align: center;
+    font-size: 14px;
+    color: #bdc3c7;
+    margin-top: 50px;
+  }
+  

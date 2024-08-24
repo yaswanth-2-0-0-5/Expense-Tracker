@@ -1,0 +1,18 @@
+.adminContainer {
+    padding: 20px;
+  }
+  
+  .userTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .userTable th, .userTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .userTable th {
+    background-color: #f4f4f4;
+  }
+  

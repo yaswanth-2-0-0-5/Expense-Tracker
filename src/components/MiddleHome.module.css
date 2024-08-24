@@ -1,0 +1,111 @@
+
+.middleContent {
+ 
+    background-color: rgba(235, 136, 171, 0.2); 
+    padding: 60px 20px;
+    text-align: center;
+    margin: 30px 0;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .middleContentInner {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .middleContent h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .middleContent p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .features, .testimonials {
+    margin: 20px 0;
+  }
+  
+  .features h3, .testimonials h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .features ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  
+  .features li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+    color: rgb(33, 33, 33);
+  }
+  
+  .features li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #0f0;
+    font-size: 20px;
+  }
+  
+  .testimonial {
+    margin: 20px 0;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .testimonial p {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+  
+  .testimonial span {
+    font-size: 14px;
+  }
+  
+  .learnMoreButton {
+    background-color: #ffffff;
+    color: rgb(196, 101, 139)(0,0,0,0.2);
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: all 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 30px;
+    animation: pulse 0.8s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  
+  .learnMoreButton:hover {
+    background-color: rgb(214, 111, 152);
+    color: white;
+    border-color: rgb(214, 110, 151);
+    transform: translateY(-2px);
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  

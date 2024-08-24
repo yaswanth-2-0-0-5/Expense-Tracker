@@ -34,15 +34,19 @@
     color: #f98511;
   }
   
-  .contactForm input,
+  /* .contactForm input, */
   .contactForm textarea {
-    width: 95%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 4px;
   }
   
+  .contactForm input{
+    width: 96%;
+  }
+
   .contactForm button {
     background-color: #007bff;
     color: white;

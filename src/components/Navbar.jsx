@@ -71,8 +71,8 @@ function Navbar() {
             <FontAwesomeIcon icon={faUser} onClick={toggleAccountDropdown} />
             {accountDropdownOpen && (
               <div className={styles.dropdownMenu}>
-                <Link to="/profile" onClick={() => setAccountDropdownOpen(false)}>
-                  <FontAwesomeIcon icon={faUserCircle} /> Profile
+                <Link to="/adlogin" onClick={() => setAccountDropdownOpen(false)}>
+                  <FontAwesomeIcon icon={faUserCircle} /> Admin
                 </Link>
                 <div onClick={handleLogout} className={styles.dropdownItem}>
                   <FontAwesomeIcon icon={faSignOutAlt} /> Logout

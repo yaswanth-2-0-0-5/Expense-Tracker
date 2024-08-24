@@ -53,15 +53,17 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsConditions from './components/TermsConditions';
 import VideoPage from './components/VideoPage';
 import SubscriptionPage from './components/SubscriptionPage';
-import ProfilePage from './components/ProfilePage'; // Import ProfilePage
 import AdminDashboard from './components/AdminDashboard';
+import AdminLoginForm from './components/AdminLoginForm'; // Import the AdminLoginForm
+import AdminPage from './components/AdminPage';
+import AdminContactPage from './components/AdminContactPage';
 
 // Higher-order component to conditionally render the Navbar
 function AppContent() {
   const location = useLocation();
   
   // Define paths where Navbar should not be displayed
-  const noNavbarPaths = ['/login', '/register'];
+  const noNavbarPaths = ['/login', '/register','/admin-login'];
 
   return (
     <div>
@@ -76,9 +78,11 @@ function AppContent() {
         <Route path="/terms-and-conditions" element={<TermsConditions />} />
         <Route path="/subscribe" element={<SubscriptionPage />} />
         <Route path="/new" element={<VideoPage />} />
-        <Route path="/profile" element={<ProfilePage />} />
         <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/adlogin" element={<AdminLoginForm />} /> {/* Add this route */}
         <Route path="*" element={<h1>404 Page Not Found</h1>} />
+        <Route path='/adminpage' element={<AdminPage/>}/>
+        <Route path='/adcontact' element={<AdminContactPage/>}/>
       </Routes>
     </div>
   );

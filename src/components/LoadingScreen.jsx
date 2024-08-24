@@ -1,4 +1,3 @@
-// src/components/LoadingScreen.jsx
 import React from 'react';
 import './LoadingScreen.css'; // Ensure this path matches where you place your CSS
 

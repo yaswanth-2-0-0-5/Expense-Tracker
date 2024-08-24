@@ -55,7 +55,7 @@ const VideoPage = () => {
           <h1 className="title">Welcome to Expense Tracker</h1>
           <p className="description">Manage your expenses efficiently with our powerful tracking tools.</p>
           <button className="explore-button" onClick={handleExploreNow}>Explore Now</button>
-          <button className="admin-button" onClick={handleAdminAccess}>Admin Access</button>
+          {/* <button className="admin-button" onClick={handleAdminAccess}>Admin Access</button> */}
         </div>
       </div>
     </div>
