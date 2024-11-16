@@ -13,7 +13,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.3",
-    "chart.js": "^4.4.3",
+    "chart.js": "^4.4.6",
     "countup.js": "^2.8.0",
     "cron": "^3.1.7",
     "firebase": "^10.12.5",
@@ -31,6 +31,7 @@
     "react-scripts": "5.0.1",
     "react-toastify": "^10.0.5",
     "react-waypoint": "^10.3.0",
+    "recharts": "^2.13.3",
     "waypoint": "^0.2.8",
     "web-vitals": "^2.1.4"
   },

@@ -10,7 +10,7 @@ const AdminLogin = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Replace with your authentication logic
-        if (email === 'admin@example.com' && password === 'password123') {
+        if (email === 'yaswanth' && password === 'yasuuu') {
             navigate('/admin'); // Redirect to admin page
         } else {
             alert('Invalid credentials');

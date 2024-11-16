@@ -109,7 +109,7 @@ const ContactPage = () => {
           <h2>Get in Touch</h2>
           <form onSubmit={handleSubmit}>
             <input
-              type="text"
+              type="written"
               name="name"
               placeholder="Your Name"
               value={formData.name}
